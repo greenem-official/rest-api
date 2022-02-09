@@ -65,7 +65,6 @@ def publish(topic, msg):
     else:
         print(f"Failed to send message to topic '{topic}'")
 
-
 def subscribe():
     def on_message(client, userdata, msg):
         the_msg = msg.payload.decode()
